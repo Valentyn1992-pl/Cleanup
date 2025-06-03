@@ -451,20 +451,21 @@ nav a {
 .price-list li {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap; /* чтобы строки не ломались */
+  align-items: flex-start;
+  gap: 10px;
   padding: 8px 0;
   border-bottom: 1px solid #ddd;
-  gap: 8px;
 }
 .price-list li span {
-  display: inline-block;
+  flex: 1;
   font-size: 16px;
   color: #333;
+  word-break: break-word;
 }
 .price-list .price {
+  white-space: nowrap;
   font-weight: bold;
   color: #007B7F;
-  white-space: nowrap; /* Не переносим цену на новую строку */
+  margin-left: 10px;
 }
 
