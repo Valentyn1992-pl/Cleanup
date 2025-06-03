@@ -347,5 +347,52 @@ nav a {
   font-weight: 600;
   color: #004444;
 }
+@media (max-width: 768px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 15px;
+    text-align: center;
+  }
+
+  .logo {
+    max-width: 120px;
+    margin-bottom: 10px;
+  }
+
+  .locations {
+    font-size: 0.9em;
+    line-height: 1.2;
+    margin-bottom: 6px;
+  }
+
+  .working-hours {
+    font-size: 0.85em;
+    margin-bottom: 10px;
+  }
+
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    margin: 10px 0;
+  }
+
+  .top-phone {
+    font-size: 1.2em;
+    margin: 8px 0;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  #lang-switch {
+    align-self: flex-end;
+    margin-top: -20px;
+    margin-right: 10px;
+  }
+}
 
 
